@@ -1,0 +1,113 @@
+body {
+  margin: 0px 5px;
+}
+
+.navbar {
+  background-color: aqua;
+  width: 500px;
+  border: black 3px solid;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+}
+
+.navbar-links {
+  display: inline;
+  padding: 15px;
+}
+
+.jumbotron {
+  font-size: 30px;
+  color: white;
+  height: 150px;
+  width: 500px;
+  text-align: center;
+  border: black 3px solid;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  background-image: url("https://boygeniusreport.files.wordpress.com/2017/05/water.jpg?quality=98&strip=all&w=782");
+  background-repeat: round;
+}
+
+.main-section {
+  height: 400px;
+  width: 500px;
+  text-align: center;
+  background-color: yellow;
+  border: black 3px solid;
+  box-sizing: border-box;
+  margin-bottom: 5px
+}
+
+img:hover {
+  transform: rotate(20deg);
+}
+
+.random-image-1 {
+  width: 200px;
+  height: 100px;
+  border: black 1px solid;
+  margin: 10px;
+  justify-content: center;
+}
+
+.random-image-2 {
+  width: 200px;
+  height: 100px;
+  border: black 1px solid;
+  margin: 10px;
+  justify-content: center;
+}
+
+.random-image-3  {
+  width: 200px;
+  height: 100px;
+  border: black 1px solid;
+  margin: 10px;
+  justify-content: center;
+}
+
+.footer-section {
+  margin-top: 5px;
+  height: 80px;
+  width: 500px;
+  text-align: center;
+  background-color: green;
+  border: black 3px solid;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: fantasy;
+}
+
+@media screen and (max-width: 500px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 230px) {
+  .random-image-1, .random-image-2, .random-image-3 {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}
+
+@media screen and (min-width: 501px) {
+  body {
+    margin: 20px;
+  }
+  .main-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.navbar, .jumbotron, .main-section, .footer-section {
+  width: 100%;
+}
+
+.random-image-1, .random-image-2, .random-image-3 {
+  margin: auto;
+}
